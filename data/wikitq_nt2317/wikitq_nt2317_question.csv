@@ -1,0 +1,21 @@
+question_id,question,ground_truth,required_actions
+0,how many plants are in algeria?,6,sum_over_column
+1,what is the average capacity of Algeria plants,4.933333333,average_over_column
+2,what is the name and capacity of the plant in Brunei?,Lumut 1 with 7.2mmtpa,lookup_row
+3,what is the average capacity of Malaysia plants?,6.266666667,"lookup_row, average_over_column"
+4,what is the latest plant built in Qatar?,2010,"lookup_row, max_over_column"
+5,what is the average capcity of all plants?,8.508,average_over_column
+6,which country has the most plants?,Algeria and Indonesia,sum_over_column
+7,Are all plants in Egypt located in the same location?,no,"lookup_row, comparison_across_rows"
+8,Is the average capacity of Malaysian plants higher than that of the Egyptian plants?,no,"lookup_row, average_over_column, comparison_across_rows"
+9,which country has the highest capacity plant?,Qatar,"max_over_column, lookup_row"
+10,What is the age difference between Algeria's oldest and newest plant?,35,"lookup_row, difference_within_column"
+11,"Between Algeria’s oldest and newest plants, how many times as large is the capacity of newest plant as the oldest?",6.666666667,"ratio_within_column, lookup_row"
+12,"Between plants from Angola and Brunei, which country's plant(s) has its location stated?",Angola,comparison_across_rows
+13,"Between the plant in Indonesia and Yemen, how many times as large is the capacity of Indonesia plant as the Yemen plant?",,"lookup_row, ratio_within_column"
+14,Which country has the newest plant?,Angola,"lookup_row, comparison_across_rows"
+15,"Considering only plants with given capacity, is any Algeria plant having larger capacity than any Indonesia plant?",no,"lookup_row, comparison_across_rows, difference_within_column"
+16,What is the age difference between oldest and newest plants within the table?,49,difference_within_column
+17,What is the absolute capacity difference between Brunei plant and Nigeria plant?,16.3,"lookup_row, difference_within_column"
+18,What is the relative capacity difference between Brunei plant and Nigeria plant?,2.263888889,"lookup_row, ratio_within_column"
+19,Which country has the widest age gap between oldest and newest plant?,Algeria,"difference_within_column, lookup_row, comparison_across_rows"
